@@ -21,7 +21,7 @@ public class DefaultRestController {
 		String[] strArray = { "Hello", "This is ", "Spring Boot ", "REST API" };
 		log.info(StringUtils.join(strArray));
 
-		return "Welcom to Spring Boot..it's going to be GREAT";
+		return "Welcome to Spring Boot..it's going to be GREAT!";
 	}
 
 	@GetMapping("/time")
