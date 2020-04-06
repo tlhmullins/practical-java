@@ -1,6 +1,7 @@
 package com.course.practicaljava.rest.domain;
 
 import java.util.Date;
+import java.util.List;
 
 public class Car {
 
@@ -25,6 +26,33 @@ public class Car {
 	private int price;
 	private boolean available;
 	private Date firstReleaseDate;
+	private List<String> additionalFeatures;
+	private Engine engine;
+	private List<Tire> compatibleTires;
+
+	public Engine getEngine() {
+		return engine;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public List<Tire> getCompatibleTires() {
+		return compatibleTires;
+	}
+
+	public void setCompatibleTires(List<Tire> compatibleTires) {
+		this.compatibleTires = compatibleTires;
+	}
+
+	public List<String> getAdditionalFeatures() {
+		return additionalFeatures;
+	}
+
+	public void setAdditionalFeatures(List<String> additionalFeatures) {
+		this.additionalFeatures = additionalFeatures;
+	}
 
 	public String getBrand() {
 		return brand;
@@ -53,7 +81,8 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car [brand=" + brand + ", color=" + color + ", type=" + type + ", price=" + price + ", available="
-				+ available + ", firstReleaseDate=" + firstReleaseDate + "]";
+				+ available + ", firstReleaseDate=" + firstReleaseDate + ", additionalFeatures=" + additionalFeatures
+				+ ", engine=" + engine + ", compatibleTires=" + compatibleTires + "]";
 	}
 
 	public int getPrice() {
